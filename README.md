@@ -23,3 +23,21 @@ described in the technical architecture. Key improvements include:
 
 This module is a starting point for the real-time coherence tracking
 layer and will evolve alongside the rest of the platform.
+
+## Backend Application (backend/app)
+
+The `backend/app` directory contains the FastAPI service exposing the platform's API. Important pieces include:
+
+- `main.py` initializes the FastAPI app and configures CORS and routing.
+- `api/v1/coherence.py` provides endpoints for coherence calculations and for generating example assessment scenarios via the Grok 3 integration.
+- `core/` implements the coherence formulas and biological optimization helpers.
+- `models/` defines dataclasses for users and coherence measurements.
+- `services/` houses the `GrokService` that communicates with GitHub Models.
+
+Run the API locally with Docker:
+
+```bash
+docker-compose up api
+```
+
+Once started, the service is available at `http://localhost:8000` and will reload automatically when files change.
