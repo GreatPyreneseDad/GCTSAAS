@@ -90,7 +90,8 @@ const GCTArchitecture: React.FC = () => {
       tech: 'Celery, Redis, NumPy/SciPy',
       details: [
         'Biological Optimization - q^optimal calculations',
-        'Derivative Analysis - dC/dt tracking',
+        'Derivative Analysis - dC/dt tracking (time-aware)',
+        'Async Streaming - aiokafka consumers',
         'Network Algorithms - Transmission modeling',
         'Statistical Analysis - Validation & reporting',
       ],
