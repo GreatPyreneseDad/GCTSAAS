@@ -4,7 +4,7 @@
   "description": "This repository contains the initial scaffolding for the **Grounded Coherence Theory** SaaS platform. The project aims to deliver exportable programs for industry customers to assess and improve organizational coherence.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "pytest -q"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,17 @@
+{
+  "name": "gct-saas-backend",
+  "version": "1.0.0",
+  "description": "GCT SaaS Backend Services",
+  "scripts": {
+    "install-python": "pip install -r requirements.txt",
+    "install-dev": "pip install -e .",
+    "test": "python -m pytest tests/ -v",
+    "test-coverage": "python -m pytest tests/ --cov=app --cov-report=html",
+    "lint": "flake8 app tests",
+    "format": "black app tests",
+    "type-check": "mypy app",
+    "dev": "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
