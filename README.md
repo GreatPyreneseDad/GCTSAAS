@@ -32,7 +32,8 @@ The `backend/app` directory contains the FastAPI service exposing the platform's
 - `api/v1/coherence.py` provides endpoints for coherence calculations and for generating example assessment scenarios via the Grok 3 integration.
 - `core/` implements the coherence formulas and biological optimization helpers.
 - `models/` defines dataclasses for users and coherence measurements.
-- `services/` houses the `GrokService` that communicates with GitHub Models.
+- `services/` houses the `GrokService` that communicates with GitHub Models, and a
+  derivative-based `LeadershipEvaluator` for leadership and intuition scoring.
 
 Run the API locally with Docker:
 

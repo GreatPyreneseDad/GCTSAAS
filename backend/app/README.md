@@ -6,6 +6,7 @@ Subdirectories:
 - **api/** – versioned API routers (currently `v1`).
 - **core/** – coherence formulas and derivative calculators.
 - **models/** – dataclasses for persistence.
-- **services/** – integrations like `GrokService`.
+- **services/** – integrations like `GrokService` and the derivative-based
+  `LeadershipEvaluator` for leadership analysis over time.
 
 The entry point of the service is `main.py`.
